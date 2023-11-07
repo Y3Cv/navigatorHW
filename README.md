@@ -1,4 +1,4 @@
-GridView flutter от Морозова Д. 3ИСП9-26 :white_check_mark:
+Navigator flutter от Морозова Д. 3ИСП9-26 :white_check_mark:
 
 Эмулятор:
 
