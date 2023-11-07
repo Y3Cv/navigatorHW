@@ -1,16 +1,15 @@
-# navigatorf
+GridView flutter от Морозова Д. 3ИСП9-26 :white_check_mark:
 
-A new Flutter project.
+Эмулятор:
 
-## Getting Started
+![Image](https://github.com/Y3Cv/navigatorHW/raw/main/images/screen1.png)
 
-This project is a starting point for a Flutter application.
+![Image](https://github.com/Y3Cv/navigatorHW/raw/main/images/screen2.png)
 
-A few resources to get you started if this is your first Flutter project:
+TextButton:
+![Image](https://github.com/Y3Cv/navigatorHW/raw/main/images/screen3.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Image](https://github.com/Y3Cv/navigatorHW/raw/main/images/screen4.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ElevatedButton:
+![Image](https://github.com/Y3Cv/navigatorHW/raw/main/images/screen5.png)
