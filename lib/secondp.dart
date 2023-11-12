@@ -1,36 +1,31 @@
 import 'package:flutter/material.dart';
 
 class SecondP extends StatelessWidget {
-  const SecondP({Key? key}) : super(key: key);
+  const SecondP({super.key, this.Photos, this.Price, this.Name });
+  final Name;
+  final Price;
+  final Photos;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Colors.purple,
-        title: const Text('WildBerries'),
-      ),
-      body: Padding(
-    padding: const EdgeInsets.all(8),
-        child: Column(
-            mainAxisSize: MainAxisSize.max,
-            crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
+      appBar: AppBar(title: Text("WildBerries"), backgroundColor: Colors.purple,),
 
-           Image(image: NetworkImage('https://krasnodar.stores-apple.com/blog/P1054788s-scaled.jpg')),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Center(
+            child: Flexible(
+            flex: 1,
+            child: Image.network("${Photos}",))),
 
-          Text('**** ₽', style: TextStyle(color: Colors.black, fontSize: 20,),),
+            Flexible(
+              flex: 1,
+            child: Text("${Price}", style: TextStyle(color: Colors.black, fontSize: 25,),) ),
 
-          Text('AirPods PRO', style: TextStyle(color: Colors.black, fontSize: 25,),),
-
-          Text('Цвет: Белый', style: TextStyle(color: Colors.black, fontSize: 15,),),
-
-          Text('Продавец: Apple', style: TextStyle(color: Colors.black, fontSize: 25,),),
-
-          Text('Доставка со склада: 8 августа', style: TextStyle(color: Colors.black, fontSize: 25,),),
-        ],
-      )),
-    );
+            Flexible(
+              flex: 1,
+            child: Text('${Name}', style: TextStyle(color: Colors.black, fontSize: 30,),)),
+              ]));
   }
 }

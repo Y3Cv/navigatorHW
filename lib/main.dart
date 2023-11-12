@@ -18,7 +18,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  final List massages = [
+  final List Photos = [
     'https://krasnodar.stores-apple.com/blog/P1054788s-scaled.jpg',
     'https://krasnodar.stores-apple.com/blog/P1054788s-scaled.jpg',
     'https://krasnodar.stores-apple.com/blog/P1054788s-scaled.jpg',
@@ -32,17 +32,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
   ];
 
-  final List Rimlin = [
-    'AirPods PRO',
-    'AirPods PRO',
-    'AirPods PRO',
-    'AirPods PRO',
-    'AirPods PRO',
-    'AirPods PRO',
-    'AirPods PRO',
-    'AirPods PRO',
-    'AirPods PRO',
-    'AirPods PRO',
+  final List Name = [
+    'AirPods PRO 1',
+    'AirPods PRO 2',
+    'AirPods PRO 3',
+    'AirPods PRO 4',
+    'AirPods PRO 5',
+    'AirPods PRO 6',
+    'AirPods PRO 7',
+    'AirPods PRO 8',
+    'AirPods PRO 9',
+    'AirPods PRO 10',
   ];
 
   final List Price = [
@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   crossAxisSpacing: 2,
                   mainAxisSpacing: 3,
                 ),
-                itemCount: massages.length,
+                itemCount: Photos.length,
                 itemBuilder: (BuildContext context, int index) {
                   return Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -91,14 +91,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           onPressed: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => const SecondP(),
+                                builder: (context) => SecondP(Photos: Photos[index], Price: Price[index], Name: Name[index], ),
                               ),
                             );
                           },
 
                           child: Flexible(
                           flex: 1,
-                          child: Image(image: NetworkImage('${massages[index]}')
+                          child: Image(image: NetworkImage('${Photos[index]}')
                           ))),
 
                   Flexible(
@@ -107,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           onPressed: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => const SecondP(),
+                                builder: (context) => SecondP(Photos: Photos[index], Price: Price[index], Name: Name[index], ),
                               ),
                             );
                           },
@@ -123,14 +123,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           onPressed: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => const SecondP(),
+                                builder: (context) => SecondP(Photos: Photos[index], Price: Price[index], Name: Name[index], ),
                               ),
                             );
                           },
 
                       child: Flexible(
                           flex: 1,
-                          child: Text('${Rimlin[index]}', style: TextStyle(color: Colors.black, fontSize: 20,),)))),
+                          child: Text('${Name[index]}', style: TextStyle(color: Colors.black, fontSize: 20,),)))),
                     ],
                   );
                 },
