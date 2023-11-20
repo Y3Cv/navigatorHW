@@ -16,7 +16,7 @@ WildBerries (корзина и регистрация) flutter от Морозо
 
 НаполненнаяКорзина:
 
-![Image](https://github.com/Y3Cv/navigatorHW/raw/main/images/basketFull.png)
+![Image](https://github.com/Y3Cv/navigatorHW/raw/main/images/baskeFull.png)
 
 Профиль:
 
