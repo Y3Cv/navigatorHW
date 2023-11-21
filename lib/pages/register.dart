@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:navigatorf/pages/itemlist.dart';
+import 'package:navigatorf/pages/profileEnter.dart';
 
 
 class RegisterP extends StatelessWidget {
@@ -28,7 +28,7 @@ class RegisterP extends StatelessWidget {
                 fontSize: 20,),),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(
-                    builder: (context) => ItemList()));
+                    builder: (context) => EnterP()));
               },
               style: ElevatedButton.styleFrom(
                   primary: Colors.deepPurple,

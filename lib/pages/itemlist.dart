@@ -92,7 +92,8 @@ class _ItemListState extends State<ItemList> {
                   itemBuilder: (BuildContext context, int index) {
                     return GestureDetector(
                         onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => Description(Price: Price[index], Photos: Photos[index], Name: Name[index], Grade: Grade[index],)));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Description(
+                            Price: Price[index], Photos: Photos[index], Name: Name[index], Grade: Grade[index],)));
                         },
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
